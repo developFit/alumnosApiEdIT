@@ -16,7 +16,7 @@ public class Alumno {
     @Column(name = "nombre")
     private String nombre;
  
-     private String apellido;
+    private String apellido;
  
      private String mail;
  
