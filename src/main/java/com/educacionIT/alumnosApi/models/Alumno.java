@@ -4,21 +4,25 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
-@Setter
-@NoArgsConstructor
+@Entity
+@Table(name= "alumno")
 public class Alumno {
 	
- private String nombre;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Integer id;
+	
+    @Column(name = "nombre")
+    private String nombre;
  
- private String apellido;
+     private String apellido;
  
- private String mail;
+     private String mail;
  
- private String password;
+   private String password;
  
- private long id;
-
+ 
 public String getNombre() {
 	return nombre;
 }
