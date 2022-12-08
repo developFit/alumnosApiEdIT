@@ -13,12 +13,8 @@ public class AlumnoController {
 
 	@PostMapping("/alta")
 	//@ApiOperation(value = "crear alumnos")
-	public ResponseEntity<Alumno> altaAlumno(@RequestBody RequestAlumnoDTO alumno){
-		Alumno a1 = new Alumno();
-		a1.setNombre("Juan");
-		a1.setApellido("Perez");
-		a1.setMail("juanparez@gmail.com");
-		a1.setPassword("asas");
-		return ResponseEntity.ok(a1);
+	public ResponseEntity<?> altaAlumno(@RequestBody RequestAlumnoDTO alumno){
+	
+		return ResponseEntity.ok("create");
 	}
 }

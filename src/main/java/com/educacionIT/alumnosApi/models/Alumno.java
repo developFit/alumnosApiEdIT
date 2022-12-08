@@ -1,5 +1,8 @@
 package com.educacionIT.alumnosApi.models;
 
+import javax.persistence.*;
+
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -16,11 +19,14 @@ public class Alumno {
     @Column(name = "nombre")
     private String nombre;
  
+    @Column(name = "apellido")
     private String apellido;
  
-     private String mail;
+    @Column(name = "mail")
+    private String mail;
  
-   private String password;
+    @Column(name = "password")
+    private String password;
  
  
 public String getNombre() {
@@ -55,12 +61,14 @@ public void setPassword(String password) {
 	this.password = password;
 }
 
-public long getId() {
+public Integer getId() {
 	return id;
 }
 
-public void setId(long id) {
+public void setId(Integer id) {
 	this.id = id;
 }
+
+
  
 }
