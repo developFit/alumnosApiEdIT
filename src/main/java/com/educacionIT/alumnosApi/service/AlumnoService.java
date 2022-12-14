@@ -1,4 +1,5 @@
 package com.educacionIT.alumnosApi.service;
+import com.educacionIT.alumnosApi.models.Alumno;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

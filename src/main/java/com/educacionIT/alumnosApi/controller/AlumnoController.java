@@ -15,6 +15,6 @@ public class AlumnoController {
 	//@ApiOperation(value = "crear alumnos")
 	public ResponseEntity<?> altaAlumno(@RequestBody RequestAlumnoDTO alumno){
 	
-		return ResponseEntity.ok("create");
+		return ResponseEntity.ok("created");
 	}
 }
